@@ -58,19 +58,20 @@ if __name__ == '__main__':
     #    c. Rename the image something short (e.g. cat.gif)
     #    d. Save the image to your computer's desktop
     #    e. Drag and drop the image into this python package
-    
+    set_background("bigEyedCat2.gif")
     # 2. Call the set_background() function with your variable inside of the parenthesis
     #    for example, set_background(bg_image)
 
     # 3. Make a new turtle
-
+    turt = turtle.Turtle()
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
-
+    turt.color('red')
+    turt.pencolor('red')
     # 5. Set the turtle width to 0 so no outlines are drawn
-
+    turt.turtlesize(stretch_wid=1)
     # 6. Set the turtle speed to 0 (fastest)
-
+    turt.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
@@ -90,4 +91,5 @@ if __name__ == '__main__':
     window.onclick(screen_clicked)
     window.onkeypress(key_pressed, 'space')
     window.listen()
-    turtle.done()
+    window.mainloop()
+
