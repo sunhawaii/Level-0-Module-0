@@ -69,6 +69,7 @@ if __name__ == '__main__':
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
     turt.color('red')
+    
     turt.pencolor('red')
     # 5. Set the turtle width to 0 so no outlines are drawn
     turt.turtlesize(stretch_wid=1)
