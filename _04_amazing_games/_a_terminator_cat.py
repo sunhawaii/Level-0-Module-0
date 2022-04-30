@@ -45,9 +45,11 @@ def key_pressed():
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
     #     left_eye.x += 5
-    
+    left_eye.x += 5
+    right_eye.x += 5
     # 11. Call the .draw() method for both eye variables.
-
+    left_eye.draw()
+    right_eye.draw()
 
 if __name__ == '__main__':
     window = turtle.Screen()
@@ -82,11 +84,13 @@ if __name__ == '__main__':
     # 8. After you've found the x and y for the eyes create 2 eye variables
     #    and initialize them:
     #    left_eye  = Eye(eye=my_turtle, x=-34, y=11, radius=30)
-    #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
+    #     #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
+    left_eye  = Eye(eye=turt, x=-49, y=64, radius=30)
+    right_eye = Eye(eye=turt, x=3, y=64, radius=30)
 
     # 9. Call the .draw() method on BOTH eye variables
-
-
+    left_eye.draw()
+    right_eye.draw()
 # ===================== DO NOT EDIT THE CODE BELOW ============================
     window.onclick(screen_clicked)
     window.onkeypress(key_pressed, 'space')
